@@ -1,0 +1,4 @@
+def l2_dist(a, b):
+    result = ((a - b) * (a - b)).sum()
+    result = result ** 0.5
+    return result 
