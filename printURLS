@@ -1,0 +1,8 @@
+import re
+
+text = "I refer to https://google.com and I never refer http://www.baidu.com if I have to search anything"
+
+pattern = r'https?://\S+'
+
+urls = re.findall(pattern, text)
+print(urls)
